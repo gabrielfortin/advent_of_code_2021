@@ -31,8 +31,12 @@ class FishPopulation():
 	def fish_count(self):
 		return len(self._fishes)
 					
-
-
+from datetime import datetime
+date_start = datetime.now()
+days = 80
+print(days)
 fishes = FishPopulation("data.txt")
-fishes.increment_days(256)
+fishes.increment_days(days)
 print(fishes.fish_count())
+
+print(datetime.now()-date_start)
